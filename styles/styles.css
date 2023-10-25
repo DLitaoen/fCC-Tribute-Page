@@ -1,0 +1,42 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #660707;
+    color: #fec500;
+    text-align: center;
+    padding: none;
+    margin: 0 0;
+}
+
+/* #tribute-info {
+    margin-bottom: 30px;
+} */
+
+img {
+    display: block;
+    margin: 15px auto;
+}
+
+#hermione-portrait {
+    min-width: 20%;
+    max-width: 25%;
+    height: auto;
+    margin-top: 2em;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+figcaption, #footer {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #fec500;
+}
+
+a:hover, a:active, a:visited {
+    color: #cca000;
+}
