@@ -1,15 +1,20 @@
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #660707;
     color: #fec500;
     text-align: center;
-    padding: none;
-    margin: 0 0;
+    padding: 0;
+    margin: 0;
 }
 
-/* #tribute-info {
-    margin-bottom: 30px;
-} */
+::-webkit-scrollbar {
+    display: none;
+}
 
 img {
     display: block;
@@ -17,26 +22,108 @@ img {
 }
 
 #hermione-portrait {
-    min-width: 20%;
-    max-width: 25%;
     height: auto;
+    width: 200px;
     margin-top: 2em;
+    border-radius: 25%;
+}
+
+h1 {
+    margin-bottom: 2px;
+}
+
+p {
+    margin-top: 0px;
 }
 
 #image {
-    max-width: 100%;
+    width: 500px;
     height: auto;
-    margin: 30px 0;
+    margin: auto;
+    border-radius: 5%;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 figcaption, #footer {
     margin-bottom: 30px;
 }
 
-a {
+a:link {
     color: #fec500;
+    text-decoration: none;
 }
 
-a:hover, a:active, a:visited {
+a:hover {
+    color: #fec500;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+a:active, a:visited {
     color: #cca000;
 }
+
+#impressive-moments {
+    margin-top: 45px;
+    padding: 0;
+    margin-bottom: -40%;
+}
+
+#badass-moments {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: -40%;
+}
+
+h2 {
+    margin-bottom: 2px;
+}
+
+.side-scroll-container {
+    height: 100vw;
+    width: 200px;
+    margin-left: 300px;
+    padding: 0;
+    transform: rotate(-90deg) translateY(-500px);
+    transform-origin: top right;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.side-scroll-container p {
+    margin-top: 25px;
+    padding: 0;
+}
+
+.side-scroll-container div:first-child {
+    margin-left: 0;
+}
+
+.side-scroll-container div {
+    display: inline-block;
+    background-color: #510707;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 15px;
+    transform: rotate(90deg);
+}
+
+.quote {
+    margin-top: -35%;
+    margin-bottom: 70px;
+}
+
+.quote-line {
+    font-size: 25px;
+    font-style: italic;
+    width: 60%;
+    margin: auto;
+}
+
