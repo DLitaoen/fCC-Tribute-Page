@@ -10,10 +10,7 @@ body {
     text-align: center;
     padding: 0;
     margin: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
+    overflow-x: hidden;
 }
 
 img {
@@ -67,20 +64,20 @@ a:active, a:visited {
 #impressive-moments {
     margin-top: 45px;
     padding: 0;
-    margin-bottom: -40%;
+    /* margin-bottom: -40%; */
 }
 
 #badass-moments {
     margin-top: 0;
     padding: 0;
-    margin-bottom: -40%;
+    /* margin-bottom: -40%; */
 }
 
 h2 {
     margin-bottom: 2px;
 }
 
-.side-scroll-container {
+/* .side-scroll-container {
     height: 100vw;
     width: 200px;
     margin-left: 300px;
@@ -113,10 +110,44 @@ h2 {
     white-space: normal;
     padding: 15px;
     transform: rotate(90deg);
+} */
+
+.side-scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+
 }
 
+.image-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    font-size: 0;
+    width: 100%;
+}
+
+.image-menu img {
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.image-menu img:first-child {
+    margin-left: 15px;
+}
+
+/* .side-scroll-container::-webkit-scrollbar {
+    display: none;
+} */
+
+
 .quote {
-    margin-top: -35%;
     margin-bottom: 70px;
 }
 
