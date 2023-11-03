@@ -66,17 +66,14 @@ a:active, a:visited {
     padding: 0;
 }
 
-h2 {
-    margin-bottom: 2px;
-}
-
 .side-scroll-container {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     font-size: 0;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .side-scroll-container img {
@@ -106,6 +103,7 @@ h2 {
 }
 
 .quote {
+    margin-top: 60px;
     margin-bottom: 70px;
 }
 
@@ -116,6 +114,10 @@ h2 {
     margin: auto;
 }
 
+#footer {
+    margin-top: 70px;
+}
+
 @media (max-width: 500px) {
     #image {
         width: 100%;
@@ -123,5 +125,14 @@ h2 {
         border-radius: 5%;
         padding-top: 15px;
         padding-bottom: 10px;
+    }
+
+    .side-scroll-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0;
+        width: 100%;
     }
 }
