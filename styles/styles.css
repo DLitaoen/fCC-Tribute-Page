@@ -34,10 +34,10 @@ p {
 }
 
 #image {
-    width: 500px;
+    max-width: 100%;
     height: auto;
     margin: auto;
-    border-radius: 5%;
+    border-radius: 10%;
     padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -73,6 +73,7 @@ a:active, a:visited {
     -webkit-overflow-scrolling: touch;
     font-size: 0;
     width: 65%;
+    max-width: 1025px;
     margin: 0 auto;
 }
 
@@ -111,6 +112,7 @@ a:active, a:visited {
     font-size: 25px;
     font-style: italic;
     width: 60%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -119,14 +121,6 @@ a:active, a:visited {
 }
 
 @media (max-width: 500px) {
-    #image {
-        width: 100%;
-        height: auto;
-        border-radius: 5%;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-
     .side-scroll-container {
         display: flex;
         flex-wrap: nowrap;
